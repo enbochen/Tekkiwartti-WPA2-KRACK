@@ -22,13 +22,6 @@ Target: Any device that uses Wi-Fi is likely vulnerable (mostly Linux, Android, 
 
 # Details
 
----
-
-# Good News
-
-- Attacker must be within WiFi network range
-
-- If you are using PC (Microsoft), You're already safe
 
 ---
 
@@ -37,6 +30,14 @@ Target: Any device that uses Wi-Fi is likely vulnerable (mostly Linux, Android, 
 - Change Wi-Fi password will not save you
 
 - IoT devices rarely receive the necessary software updates to correct security issues
+
+---
+
+# Good News
+
+- Attacker must be within WiFi network range
+
+- If you are using PC (Microsoft), You're already safe
 
 ---
 
