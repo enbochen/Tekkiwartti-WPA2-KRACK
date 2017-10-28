@@ -2,7 +2,7 @@
 
 KRACK: Key Reinstallation Attacks
 
-![intro](../resources/pics/intro.jpg)
+![intro](../resources/pics/intro.png)
 
 ---
 
