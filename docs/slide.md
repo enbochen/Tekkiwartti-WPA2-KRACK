@@ -1,7 +1,6 @@
 # Tekkiwartti
 
 KRACK: Key Reinstallation Attacks
-
 ![intro](../resources/pics/intro.png)
 
 ---
@@ -10,26 +9,43 @@ KRACK: Key Reinstallation Attacks
 
 When: discoverd in 2016, notified vendors at July 14, 2017, publish in Public at Oct 16, 2017
 
-Who: Mathy Vanhoef (Belgain researcher)
+Who: Mathy Vanhoef (Belgain Researcher)
 
-What: Found vulnerability of WPA2 four-way handshakes
+What: protocol design flaw (WPA2 four-way handshakes) + software bug (linux based systems)
 
-How: Reading the code when writing another paper
+How: reinstall an already-in-use key by manipulating and replaying handshake messages
 
 Target: Any device that uses Wi-Fi is likely vulnerable (mostly Linux, Android, and OpenBSD)
 
 ---
+![paper](../resources/pics/paper.png)
+---
 
 # Details
 
+- WPA2 4-way handshake to negotiate a shared key with router
 
+- Key + nonces are used for encrypting packets
+
+- How it is used depends on the actual crypto algorithm being used
+
+- Crypto attack if certain valuers are reused 
+
+- KRACK: force reusing same values
+
+- Software bug was found in some linux based systems 
+
+- Key reset to all zero: 00000000000
+
+---
+![handshake](../resources/pics/handshake.png)
 ---
 
 # Bad News
 
-- Change Wi-Fi password will not save you
-
 - IoT devices rarely receive the necessary software updates to correct security issues
+
+- Change Wi-Fi password will not save you
 
 ---
 
@@ -37,7 +53,7 @@ Target: Any device that uses Wi-Fi is likely vulnerable (mostly Linux, Android, 
 
 - Attacker must be within WiFi network range
 
-- If you are using PC (Microsoft), You're already safe
+- If you are using PC, You're already safe
 
 ---
 
