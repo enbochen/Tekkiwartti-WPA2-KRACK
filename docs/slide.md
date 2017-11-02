@@ -9,13 +9,19 @@ KRACK: Key Reinstallation Attacks
 
 When: discoverd in 2016, notified vendors at July 14, 2017, publish in Public at Oct 16, 2017
 
-Who: Mathy Vanhoef (Belgain Researcher)
+Who: Mathy Vanhoef (Belgian PhD Researcher of Network Security & Applied Crypto)
 
-What: protocol design flaw (WPA2 four-way handshakes) + software bug (linux based systems)
+What: All wireless traffic could potentially be decrypted
+
+Why: protocol design flaw (WPA2 four-way handshakes) + software bug (linux based systems)
 
 How: reinstall an already-in-use key by manipulating and replaying handshake messages
 
-Target: Any device that uses Wi-Fi is likely vulnerable (mostly Linux, Android, and OpenBSD)
+Vulnerable devices: 
+  * Any device that uses Wi-Fi is likely vulnerable 
+  * Especially Linux and Android, but also the WPA2 implementations of other operating systems (macOS, iOS, Windows).
+  * Access points that use the affected 802.11r standard or are set up as repeaters
+
 
 ---
 ![paper](../resources/pics/paper.png)
