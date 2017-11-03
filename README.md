@@ -1,4 +1,4 @@
-KRACK: Key Reinstallation Attacks on WPA2
+# KRACK: Key Reinstallation Attacks on WPA2
 ![intro](/resources/pics/intro.png)
 
 ---
@@ -140,7 +140,9 @@ IoT Devices:
 :sos: = Pray to god
 
 https://www.krackattacks.com/
+
 https://www.kb.cert.org/vuls/byvendor?searchview&Query=FIELD+Reference=228519&SearchOrder=4
+
 https://github.com/kristate/krackinfo 
 
 
