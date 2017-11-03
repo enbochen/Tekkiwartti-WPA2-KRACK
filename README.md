@@ -146,7 +146,7 @@ IoT Devices:
 ## Reference
 
  - https://www.krackattacks.com/
- - https://www.kb.cert.org/vuls/byvendor?searchview&Query=FIELD+Reference=228519&SearchOrder=4
+ - https://char.gd/blog/2017/wifi-has-been-broken-heres-the-companies-that-have-already-fixed-it
  - https://github.com/kristate/krackinfo 
 
 ## Run this presentation in Terminal
