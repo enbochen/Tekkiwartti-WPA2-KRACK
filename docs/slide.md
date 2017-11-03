@@ -3,13 +3,13 @@ KRACK: Key Reinstallation Attacks on WPA2
 
 ---
 
-# So, what?
+# So, what is KRACK?
 
-- When: discoverd in 2016, notified vendors at July 14, 2017, publish in Public at Oct 16, 2017
+- What:  Key Reinstallation AttaCK: Any data or information that the victim transmits can be decrypted, replayed or forged
+
+- When: discovered in 2016, notified vendors at July 14, 2017, publish in Public at Oct 16, 2017
 
 - Who: Mathy Vanhoef (Belgian PhD Researcher of Network Security & Applied Crypto)
-
-- What:  Any data or information that the victim transmits can be decrypted, replayed or forged
 
 - Why: protocol design flaw (WPA2 four-way handshakes) + implementation bug (linux based systems)
 
@@ -139,6 +139,7 @@ IoT Devices:
 :x: = No known fix
 :sos: = Pray to god
 
+https://www.krackattacks.com/
 https://www.kb.cert.org/vuls/byvendor?searchview&Query=FIELD+Reference=228519&SearchOrder=4
 https://github.com/kristate/krackinfo 
 
