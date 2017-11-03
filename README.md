@@ -3,7 +3,7 @@
 
 ---
 
-# So, what is KRACK?
+## So, what is KRACK?
 
 - What:  Key Reinstallation AttaCK: Any data or information that the victim transmits can be decrypted, replayed or forged
 
@@ -30,7 +30,7 @@
 
 ---
 
-# Highlights
+## Highlights
 
 - WPA2 4-way handshake to negotiate a shared key with router
 
@@ -56,7 +56,7 @@ A. Bad news  B. Bad news
 
 ---
 
-# Bad News
+## Bad News
 
 - Adversary can decrypt arbitrary packets
     * This allows an adversary to obtain the TCP sequence numbers of a connection, and hijack TCP connections.
@@ -72,7 +72,7 @@ A. Bad news  B. Bad news
 - Updates may never come for many IoT devices
 ---
 
-# Good News
+## Good News
 
 - Adversary can not recover WPA password
 
@@ -84,7 +84,7 @@ A. Bad news  B. Bad news
 
 ---
 
-# What you can do ?
+## What you can do ?
 
 1. Check with device vendor if the security patch is available
 
@@ -100,7 +100,7 @@ A. Bad news  B. Bad news
 
 ---
 
-### What I learn ?
+## What I learn ?
 
 - Curiosity, Critical thinking, source code reading
 
@@ -110,7 +110,7 @@ A. Bad news  B. Bad news
 
 ---
 
-# Firmware patch status (Last Update: Nov 1, 2017)
+## Firmware patch status (Last Update: Nov 1, 2017)
 
 “We’re probably still going to find vulnerable devices 20 years from now”
 
