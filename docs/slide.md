@@ -1,17 +1,15 @@
-# Tekkiwartti
-
-KRACK: Key Reinstallation Attacks
+KRACK: Key Reinstallation Attacks on WPA2
 ![intro](../resources/pics/intro.png)
 
 ---
 
-# So, whattt?
+# So, what?
 
 - When: discoverd in 2016, notified vendors at July 14, 2017, publish in Public at Oct 16, 2017
 
 - Who: Mathy Vanhoef (Belgian PhD Researcher of Network Security & Applied Crypto)
 
-- What:  Any data or information that the victim transmits can be decrypted, inject packets (TKIP or GCMP ONLY)
+- What:  Any data or information that the victim transmits can be decrypted, replayed or forged
 
 - Why: protocol design flaw (WPA2 four-way handshakes) + implementation bug (linux based systems)
 
@@ -25,8 +23,14 @@ KRACK: Key Reinstallation Attacks
 ---
 ![paper](../resources/pics/paper.png)
 ---
+![handshake](../resources/pics/handshake.png)
 
-# Details
+- PTK: Pairwise Transient Key =  Pairwise Master Key(PMK) + AP nonce(ANonce) + STA nonce(SNonce) + AP MAC address + STA MAC address ->  decrypt unicast traffic
+- GTK: Group Temporal Key -> decrypt multicast and broadcast traffic
+
+---
+
+# Highlights
 
 - WPA2 4-way handshake to negotiate a shared key with router
 
@@ -40,13 +44,16 @@ KRACK: Key Reinstallation Attacks
 
 - Software bug was found in some linux based systems 
 
-- Key reset to all zero: 00000000000
+- Key reset to all zero
 
 ---
-![handshake](../resources/pics/handshake.png)
 
-- PTK: Pairwise Transient Key =  Pairwise Master Key(PMK) + AP nonce(ANonce) + STA nonce(SNonce) + AP MAC address + STA MAC address
-- GTK: Group Temporal Key -> decrypt multicast and broadcast traffic
+![choice](../resources/pics/choice.png)
+
+- Bad news or good news, which do you want first?
+
+A. Bad news  B. Bad news
+
 ---
 
 # Bad News
@@ -61,8 +68,6 @@ KRACK: Key Reinstallation Attacks
 - Adversary can force the client into using a predictable all-zero encryption key. (ANDROID 6.0+ and LINUX)
 
 - The attack works for both clients and access points
-
-- Attacks against Android 6.0+ and linux devices are very easy to accomplish
 
 - Updates may never come for many IoT devices
 ---
@@ -91,7 +96,7 @@ KRACK: Key Reinstallation Attacks
 
 5. Place devices on separate, restricted subnets/networks/VLANs and place devices on dedicated wireless networks; then, enforce different access controls per subnet
 
-6. Always only visit website with HTTPS
+![list](../resources/pics/list.png)
 
 ---
 
@@ -100,6 +105,8 @@ KRACK: Key Reinstallation Attacks
 - Curiosity, Critical thinking, source code reading
 
 - How to prevent these types of bugs: "Need more rigorous inspections of protocol implementations"
+
+![fear](../resources/pics/fear.gif)
 
 ---
 
@@ -127,12 +134,12 @@ IoT Devices:
 - Amazon:warning: : "In the process of reviewing devices." No fix issued for Echo etc 
 - Other IoT devices :sos: : probably patch will never reach them
 
-https://www.kb.cert.org/vuls/byvendor?searchview&Query=FIELD+Reference=228519&SearchOrder=4
-https://github.com/kristate/krackinfo
-
 :white_check_mark: = Available for download and patched
 :warning: = Fix pending release or in beta
 :x: = No known fix
-:sos: = Pray to god 
+:sos: = Pray to god
+
+https://www.kb.cert.org/vuls/byvendor?searchview&Query=FIELD+Reference=228519&SearchOrder=4
+https://github.com/kristate/krackinfo 
 
 
