@@ -135,14 +135,22 @@ IoT Devices:
 - Other IoT devices :sos: : probably patch will never reach them
 
 :white_check_mark: = Available for download and patched
+
 :warning: = Fix pending release or in beta
+
 :x: = No known fix
+
 :sos: = Pray to god
 
-https://www.krackattacks.com/
+---
+## Reference
 
-https://www.kb.cert.org/vuls/byvendor?searchview&Query=FIELD+Reference=228519&SearchOrder=4
+ - https://www.krackattacks.com/
+ - https://www.kb.cert.org/vuls/byvendor?searchview&Query=FIELD+Reference=228519&SearchOrder=4
+ - https://github.com/kristate/krackinfo 
 
-https://github.com/kristate/krackinfo 
-
-
+## Run this presentation in Terminal
+```
+tslide README.md
+```
+https://github.com/tslide/tslide
